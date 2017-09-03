@@ -75,7 +75,7 @@ color: #FFF;
 font-size: 35px;
 letter-spacing: 5px;
 font-weight: 900;
-background-color:rgba(20, 152, 152, 1);
+background-color:rgba(192, 192, 192, 1);
 padding-bottom: 60px;
 }
 
@@ -112,7 +112,7 @@ border-width: 0 0 0px;
    HOME SECTION STYLES -IN HOME / INDEX.HTML 
  ============================================================ */
 #home-sec {
-      background: url(../img/header.jpg) no-repeat center center;
+      background-color: rgba(192, 192, 192, 1) no-repeat center center;
 padding: 0;
 -webkit-background-size: cover;
 background-size: cover;
@@ -121,7 +121,7 @@ color:#fff;
 }
 
     #home-sec .overlay {
-        background-color:rgba(20, 152, 152, 0.9);
+        background-color:rgba(192, 192, 192, 0.9);
         min-height:350px;
     }
     #home-sec h1 {
