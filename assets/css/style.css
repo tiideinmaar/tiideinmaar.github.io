@@ -6,7 +6,7 @@
 
     100% Free To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
 /* =============================================================
    GENERAL STYLES
@@ -21,7 +21,7 @@ section {
     padding-bottom:80px;
     padding-top:75px;
 }
- 
+
 .hr-set {
     border-top:2px solid #000;
     max-width:250px;
@@ -67,7 +67,7 @@ cursor:pointer;
 }
 
  /* =============================================================
-   MESU STYLES 
+   MESU STYLES
  ============================================================ */
 
 .navbar-inverse .navbar-brand,.navbar-inverse .navbar-brand:hover {
@@ -109,7 +109,7 @@ border-width: 0 0 0px;
 }
 
   /* =============================================================
-   HOME SECTION STYLES -IN HOME / INDEX.HTML 
+   HOME SECTION STYLES -IN HOME / INDEX.HTML
  ============================================================ */
 #home-sec {
       background-color: rgba(192, 192, 192, 1) no-repeat center center;
@@ -132,7 +132,7 @@ color:#fff;
     padding:10px;
 }
 /* =============================================================
-   SEARCH DOMAIN SECTION STYLES  -IN HOME / INDEX.HTML 
+   SEARCH DOMAIN SECTION STYLES  -IN HOME / INDEX.HTML
  ============================================================ */
 #search-domain {
     padding-bottom:50px;
@@ -156,7 +156,7 @@ color:#fff;
     -moz-border-radius:0px;
 }
 /* =============================================================
-   SERVICES SECTION STYLES  -IN HOME / INDEX.HTML 
+   SERVICES SECTION STYLES  -IN HOME / INDEX.HTML
  ============================================================ */
 
 #services-sec {
@@ -165,7 +165,7 @@ color:#fff;
 }
 
    /* =============================================================
-   CLIENT TESTIMONIAL SECTION STYLES  -IN HOME / INDEX.HTML 
+   CLIENT TESTIMONIAL SECTION STYLES  -IN HOME / INDEX.HTML
  ============================================================ */
 #testimonial-sec {
   background-color:#43698E;
@@ -227,7 +227,7 @@ font-size: 20px;
 padding: 5px;
 }
 /* =============================================================
-   FEATURES SECTION STYLES  -IN HOME / INDEX.HTML 
+   FEATURES SECTION STYLES  -IN HOME / INDEX.HTML
  ============================================================ */
 #features-sec {
     background-color:#EFEFEF;
@@ -275,7 +275,7 @@ color:#fff;
 }
 .headline-sec .overlay {
         background-color:rgba(192, 192, 192, 0.9);
-        min-height:170px;
+        min-height:50px;
     }
     .headline-sec h3 {
         padding-top:100px;
@@ -293,14 +293,14 @@ color:#fff;
 .pricing-div ul{
     padding-top:30px;
     list-style:none;
-    
-    
+
+
 }
 
     .pricing-div ul li {
         padding-left:0px;
         padding-bottom:20px;
-        
+
     }
         .pricing-div ul li i {
             padding-right:10px;
