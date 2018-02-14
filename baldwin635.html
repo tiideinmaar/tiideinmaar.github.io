@@ -34,7 +34,70 @@
         <div class="col-md-12" style="min-height:800px;">
           <br>
           <p>
-
+            My Baldwin SilentTouch 635 Church Organ was originally used for playing church services at Hope Summit Church in Rochester, MN.
+            It had been gifted to the Church brand new by a long time member, who became the organist there. Unfortunately, after years of
+            reliable service, small problems began to arise. Eventually, after renovations and improvements to the Church, it was discovered
+            that the organ would not work with the new sound system. Soon after, for reasons I don't know, the organist who gifted the organ
+            was no longer with the Church.
+          </p>
+          <p>
+            After sitting unused for years, the Church made the sad decision to list the organ for sale, in as-is condition.
+            In May of 2017 I made contact with Pastor Jeff M. through Craigslist, and began inquiring about the organ. Later that month, I
+            drove up to Rochester with a few friends to take a look at the organ. It turned that before I arrived, another potential
+            buyer had came to take a look. They flat out told the Church that they planned to use the organ for nothing more than spare
+            parts. It was decided that the Church wanted the organ to go somewhere where it could remain in use, bringing joy to others, not
+            to be parted out and destroyed.
+          </p>
+          <p>
+            When I arrived, I explained to Pastor Jeff my intentions: I would take the organ into my home, where it would become my practice
+            organ. I would do what I could to restore all original function. Much to my surprise, as my friends and I were looking at
+            the inside, Pastor Jeff walked in and told me "By the way, if you want the organ, you can have it." He named two conditions: 1) I
+            haul it out that day, and 2) I record a video of the organ once it was up and running. I decided that the problems
+            that had come up through the years were likely not impossible to fix. At the time, I was a student of electrical engineering at
+            Iowa State University.
+          </p>
+          <p>
+            Unable to test the organ, as at this point it would no longer even power on, much less connect to the brand new sound system, I made
+            the decision that I could repair it. My friends and I loaded the organ into a U-Haul, and it began it's journey to Ames, Iowa. After
+            spending three hours to get it through my door, the main fuse was replaced and the organ was plugged in and connected to a suitable
+            sound system. It was time to power on the organ for the first time in years. I pressed the power switch, and nothing. It had blown
+            it's new fuse. I replaced the fuse again, and once again it blew. This was not good. And so began the long process of repair and
+            restoration.
+          </p>
+          <p>
+            The problems with the organ turned out to be much greater than I originally anticipated. I decided that the issue with the fuses was
+            likely the fuse holder itself, as it had been worn and would short itself. I replaced it with an equivalent circuit breaker. Finally,
+            the organ would power on. The next issues I discovered was in the voices. Certain voices, most notably all of the reeds, were far too
+            quiet, to the point where they were barely audible. Other voices exhibited a very peculiar problem by which A and Ab in certain
+            octaves both sound at the same time, regardless of which of the two keys was pressed. My roommate and I took to calling this aweful
+            noise the "duck".
+          </p>
+          <p>
+            After trying and failing to repair the original voices, having no way of knowing how the organ worked, no schematics, and almost no
+            resources, I decided that the only way to repair the organ was to remove all of its original and outdated electronics from the 1980s.
+            In their place, a simple digital system would be custom built for the organ, giving it MIDI capability and allowing connection to
+            a modern PC. From there, software such as Hauptwerk or GrandOrgue would be used to simulate some of the best pipe organs in the world
+            using samples recorded from each individual pipe.
+          </p>
+          <p>
+            And this is where I am at now, trying to devise a system which would do everything I need it to do, while remaining on the budget of
+            a college student. At the end of the Spring 2017 semester, I completely changed directions, and became an organ major. That means I
+            no longer had the electrical engineering classes or the labs at my disposal. I am on my own as far as that goes.
+          </p>
+          <p>
+            So far, I have successfully designed and tested an Arduino Uno powered circuit which will act as the keyboard scanner, detecting
+            each key press, converting that to MIDI commands, and sending the commands to an attached computer. It can also detect changes
+            in expression pedals, sending that as MIDI as well. It uses 8 channel multiplexer IC's to enable such a large number of required
+            I/O pins to be used with a very limited microcontroller such as the Arduino Uno.
+          </p>
+          <p>
+            I am currently working on a similar system for
+            scanning stops and pistons. It's most basic function is to scan stops and send the relevant information to the PC as MIDI commands.
+            However, it must also incorporate piston functions. To any non-organists, this means it must read which stops are currently on and
+            off, and be able to store that information as a preset to be recalled at the press of a specific piston, located beneath each
+            keyboard. In addition to that, it must store up to 64 sets of these pistons and their relevant stop data in different memory banks
+            to allow multiple organists to use the same console and each have their own set of presets. This functionality will only run locally,
+            it is not necessary for it to send any of the piston information to the PC.
           </p>
         </div>
       </div>
