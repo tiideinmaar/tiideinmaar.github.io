@@ -105,7 +105,7 @@
           <p>
             So far, I have successfully designed and tested an Arduino Uno powered circuit which will act as the keyboard scanner, detecting
             each key press, converting that to MIDI commands, and sending the commands to an attached computer. It can also detect changes
-            in expression pedals, sending that as MIDI as well. It uses 8 channel multiplexer IC's to enable such a large number of required
+            in expression pedals, sending that as MIDI as well. It uses 4x 8-channel multiplexer IC's to enable such a large number of required
             I/O pins to be used with a very limited microcontroller such as the Arduino Uno.
           </p>
           <p>
@@ -135,6 +135,42 @@
             soldered onto the PCB. I will also be making my own ribbon cables for the connections between the board and the keyboards, pedalboards,
             and other switches, and so I have 200 feet of 3M 16 conductor 26AWG ribbon cable and compatible ribbon cable headers. I've also had to
             acquire a special crimper to attach the headers to the cable itself.
+          </p>
+          <hr>
+          <p>
+            <i>Modified August 30, 2018</i>
+          </p>
+          <p>
+            It has been a few months since I last updated this page. Since then, I discovered a critical error with my first PCB design. Just before
+            I ordered the boards, I made a change to the multiplexer template. I mistakenly thought that the pin layout remained the same, and I did 
+            not double check. Unfortunately, one side of the IC had it's pins flipped, making it completely unusable. I fixed my error and ordered 
+            version 2, which I soldered together for testing. This time, it worked!
+          </p>
+          <p>
+            My problem now is inherent to how I designed the board. I had originally thought I would use a seperate system for reading the stops 
+            and pistons, as I described in my last update. It follows that I designed the board with that in mind, which means that I only allowed 
+            it enough inputs to cover the two manuals and the pedalboard, plus 38 extras. However, I no longer believe that to be the best option. 
+            In order to use my system to control the entire organ, meaning the two manuals (61 keys each), the pedalboard (32 pedals), 
+            the pistons (about 28), the stops (48 total), and the stop cancels (3 divisionals, 1 general), I will need to redisign the board yet 
+            again. This means either more multiplexers, or larger multiplexers such as 16-channel instead of 8-channel. The expression pedals 
+            are controlled directly from the Arduino, supporting up to 6 potentiometers, or other microcontroller as I will discuss below which 
+            may vary in how many potentiometers it will handle.
+          </p>
+          <p>
+            I've also run into the issue of latency. The Arduino Uno runs at 16MHz, though I can potentially push that to 20MHz if I physically 
+            modify the hardware by adding a new crystal oscillator. I did a small test to determine just how much latency I could expect, and I 
+            was getting upwards of 80ms delay between pressing a key and the computer registering the key press. It doesn't sound like much, but 
+            it is enough to mess up the organist's rhythm and make it impossible to play well. My latest attempt, which I have tested with a single 
+            keyboard using my previous PCB's, will use a Teensy 3.2 board, which is an ARM microcontroller running around 75MHz if I remember 
+            correctly. It has some latency, though it is fairly unnoticeable and certainly bearable.
+          </p>
+          <p>
+            The final potential solution to my problem is to redisign the circuit entirely. Rather than using multiplexers, I could use shift 
+            registers. This could theoretically speed up the scanner 800% by scanning 8 inputs per operation as opposed to only 1 input per 
+            operation. I hesitate to try this for multiple reasons. The first is that I simply have no experience with shift registers, and very 
+            little in designing electronics like this in general. The other reason is that I have already spent more money on the project than I 
+            would like, and cannot afford to waste money by starting over. Only time will tell what I will decide, but I will update this page 
+            once again as soon as I have progress to share.
           </p>
         </div>
       </div>
